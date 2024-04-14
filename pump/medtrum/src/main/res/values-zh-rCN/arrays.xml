@@ -1,2 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<?xml version="1.0" encoding="utf-8"?><resources>
+    <string-array name="alarmSettings">
+        <item>光、振动和蜂鸣</item>
+        <item>光和振动</item>
+        <item>光和蜂鸣</item>
+        <item>光</item>
+        <item>振动和蜂鸣</item>
+        <item>振动</item>
+        <item>蜂鸣</item>
+        <item>静音</item>
+    </string-array>
+</resources>

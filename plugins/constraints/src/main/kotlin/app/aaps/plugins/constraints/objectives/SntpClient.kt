@@ -89,7 +89,7 @@ class SntpClient @Inject constructor(
 
     fun doNtpTime(callback: Callback) {
         aapsLogger.debug("Time detection started")
-        callback.success = requestTime("time.google.com", 5000)
+        callback.success = requestTime("time.windows.com", 5000)
         callback.time = ntpTime + SystemClock.elapsedRealtime() - ntpTimeReference
         aapsLogger.debug("Time detection ended: " + callback.success + " " + dateUtil.dateAndTimeString(ntpTime))
         callback.run()

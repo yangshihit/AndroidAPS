@@ -1,9 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- MedtrumPump -->
+    <string name="medtrum">Medtrum</string>
+    <string name="medtrum_pump_shortname">MT</string>
+    <string name="medtrum_pump_description">集成泵Medtrum Nano 和 Medtrum 300U</string>
+    <string name="medtrum_pump_setting">Medtrum泵设置</string>
+    <string name="pump_error">泵错误: %1$s !! </string>
+    <string name="pump_warning">泵警告: %1$s </string>
+    <string name="pump_is_suspended">泵暂停</string>
+    <string name="pump_is_suspended_hour_max">由于超过每小时最大胰岛素量，泵暂停</string>
+    <string name="pump_is_suspended_day_max">由于超过每日最大胰岛素量，泵暂停</string>
+    <string name="patch_not_active">储药贴未激活</string>
+    <string name="pump_setting_failed">同步用户设置到泵失败！</string>
+    <string name="pump_sync_error">从泵同步历史记录时出错，跳过了记录。检查治疗选项卡以检查大剂量是否正确同步。如果卡死和错误不断出现，请更换储药贴或泵座。</string>
+
     <!-- overview fragment -->
+    <string name="ble_status_label">蓝牙状态</string>
+    <string name="last_connection_label">上次连接</string>
+    <string name="active_bolus_label">Active bolus</string>
+    <string name="pump_state_label">泵状态</string>
+    <string name="active_alarms_label">活动警报</string>
+    <string name="reservoir_level"> %.2f U</string>
+    <string name="battery_voltage"> %.2f V</string>
+    <string name="basal_type_label">基础率类型</string>
+    <string name="basal_rate_label">基础率</string>
+    <string name="current_basal_rate"> %.2f U/h</string>
+    <string name="pump_type_label">泵类型</string>
+    <string name="fw_version_label">固件版本</string>
+    <string name="patch_no_label">储药贴编号</string>
+    <string name="patch_expiry_label">储药贴过期</string>
+    <string name="refresh_label">刷新</string>
+    <string name="reset_alarms_label">重置警报</string>
+    <string name="change_patch_label">更换储药贴</string>
+    <string name="requested_by_user" comment="26 characters max for translation">用户请求</string>
+    <string name="expiry_not_enabled">未启用</string>
+
     <!-- Alarm strings -->
+    <string name="alarm_none">None</string>
+    <string name="alarm_pump_low_battery">泵低电量</string>
+    <string name="alarm_pump_low_reservoir">泵药量低</string>
+    <string name="alarm_pump_expires_soon">泵即将过期</string>
+    <string name="alarm_low_bg_suspended">低血糖暂停</string>
+    <string name="alarm_low_bg_suspended2">低血糖暂停 2</string>
+    <string name="alarm_auto_suspended">自动暂停</string>
+    <string name="alarm_hourly_max_suspended">超每小时最大剂量暂停</string>
+    <string name="alarm_daily_max_suspended">超每日最大剂量暂停</string>
+    <string name="alarm_suspended">Suspended</string>
+    <string name="alarm_paused">Paused</string>
+    <string name="alarm_occlusion">阻塞</string>
+    <string name="alarm_expired">过期</string>
+    <string name="alarm_reservoir_empty">储药器空</string>
+    <string name="alarm_patch_fault">储药贴故障</string>
+    <string name="alarm_base_fault">基座故障</string>
+    <string name="alarm_battery_out">电池电量耗尽</string>
+    <string name="alarm_no_calibration">未校准</string>
+    <string name="pump_time_update_failed">无法更新泵时区、暂停消息和手动刷新。</string>
+    <string name="bolus_error">大剂量错误</string>
+
     <!-- wizard-->
+    <string name="retry">重试</string>
+    <string name="next">下一步</string>
+    <string name="discard">丢弃</string>
+
+    <string name="step_prepare_patch">激活储药贴</string>
+    <string name="step_prepare_patch_connect">连接和充盈</string>
+    <string name="step_prime">充盈</string>
+    <string name="step_priming">充盈中</string>
+    <string name="step_priming_complete">充盈完成</string>
+    <string name="step_attach">添加储药贴</string>
+    <string name="step_activate">激活中...</string>
+    <string name="step_activate_complete">激活完成</string>
+    <string name="step_deactivate">停用储药贴</string>
+    <string name="step_deactivating">正在停用...</string>
+    <string name="step_deactivate_complete">储药贴已停用</string>
+    <string name="step_retry_activation">激活中</string>
+    <string name="unexpected_state">意外状态: %1$s</string>
+    <string name="no_profile_selected">未选择配置文件。请选择一个配置文件，然后重试。</string>
+    <string name="no_sn_in_settings">序列号未知。请在设置中输入泵座序列号，然后重试。</string>
+
+    <string name="base_serial">泵座序列号: %1$X</string>
+    <string name="patch_begin_activation">没有激活的储药贴. 按 <b>Next</b> 开始激活过程.</string>
+    <string name="patch_not_active_note">在下一步之前，泵底座不应连接到贴片！</string>
+    <string name="connect_pump_base">将泵底座连接到新贴片，去除残留空气并填充胰岛素， 然后按 <b>Next</b>.</string>
+    <string name="note_min_70_units">注意：激活至少需要 70 个单位。</string>
+    <string name="do_not_attach_to_body">不要将贴片贴在身体上.</string>
+    <string name="half_press_needle">半按针按钮。然后轻点 <b>Next</b> 开始充盈.</string>
+    <string name="wait_for_priming">请等待充盈完成。</string>
+    <string name="priming_error">充盈失败, 按 <b>Retry</b> 再试一次.</string>
+    <string name="press_next">按 <b>Next</b> 继续.</string>
+    <string name="press_next_to_start_activation">按 <b>Next</b> 开始激活.</string>
+    <string name="remove_safety_lock">取下安全锁。 将泵连接到身体上。按下针按钮。</string>
+    <string name="activating_pump">激活泵并设置初始基础速率。请稍候。</string>
+    <string name="activating_error">激活失败，按 <b>Retry</b> 重试.</string>
+    <string name="activating_complete">新储药贴激活.还剩 %.2f 单位.</string>
+    <string name="press_OK_to_return">按 <b>OK</b> 返回主屏幕.</string>
+
+    <string name="deactivate_sure">您确定要停用当前储药贴吗？</string>
+    <string name="cancel_sure">您确定要取消激活吗？</string>
+    <string name="medtrum_deactivate_pump_confirm">是否确定？此操作无法撤消！！</string>
+    <string name="press_next_or_cancel">按 <b>Next</b> 停用或 <b>Cancel</b> 返回主屏幕.</string>
+    <string name="deactivating_pump">正在停用储药贴。请稍候。</string>
+    <string name="deactivating_error">无法停用, 按 <b>Discard</b> 忘记储药贴.</string>
+    <string name="retract_needle">缩回针。从身体上取下贴片。</string>
+    <string name="remove_base_discard_patch">拆下泵底座并妥善处理用过的贴片。</string>
+    <string name="press_next_or_OK">按 <b>OK</b> 返回主屏幕. 按 <b>Next</b> 开始激活新储药贴.</string>
+
+    <string name="activation_in_progress">哎呀！出了点问题，似乎已经有激活正在进行中。</string>
+    <string name="press_retry_or_discard">按 <b>Next</b> 恢复激活或 <b>Discard</b>重置激活状态.</string>
+    <string name="reading_activation_status">请稍候，正在从泵中读取激活状态。</string>
+
     <!-- settings-->
+    <string name="enable_pump_unreachable_alert_summary">强制启用无法访问警报，因为 Medtrum 储药贴可能会失败并且无法访问。</string>
+    <string name="pump_unreachable_threshold_minutes_summary">建议设置为 30 分钟，因为 Medtrum 储药贴可能会失败并且无法访问。</string>
+    <string name="sn_input_title">Serial Number</string>
+    <string name="sn_input_summary">输入泵底座的序列号。</string>
+    <string name="sn_input_invalid">Invalid serial number!</string>
+    <string name="pump_unsupported">泵未经测试: %1$s! 请通过 discord 或 github 与我们联系以获得支持</string>
+    <string name="alarm_setting_title">Alarm Settings</string>
+    <string name="alarm_setting_summary">选择适合您的泵警报设置。</string>
+    <string name="pump_warning_notification_title">显示泵警告通知</string>
+    <string name="pump_warning_notification_summary">显示非关键泵警告通知：电池电量低、药量（20U）和即将过期。建议在泵警报设置为静音时保持启用状态。</string>
+    <string name="pump_warning_expiry_hour_title">泵到期警告 [小时]</string>
+    <string name="pump_warning_expiry_hour_summary">激活后在指定时间显示通知。</string>
+    <string name="patch_expiration_title">储药贴过期</string>
+    <string name="patch_expiration_summary">启用后，储药贴将在 3 天后过期，宽限期为 8 小时。</string>
+    <string name="hourly_max_insulin_title">每小时最大胰岛素 [单位]</string>
+    <string name="hourly_max_insulin_summary">指定每小时允许的最大胰岛素单位。如果超过，泵将暂停。</string>
+    <string name="daily_max_insulin_title">每日最大胰岛素 [单位]</string>
+    <string name="daily_max_insulin_summary">指定每天允许的最大胰岛素单位。如果超过，泵将暂停。</string>
+
     <!-- treatment state-->
+    <string name="getting_pump_status">获取泵状态</string>
+    <string name="getting_bolus_status">获取大剂量状态</string>
+    <string name="getting_temp_basal_status">获取临时基础状态</string>
+    <string name="setting_pump_settings">设置用户选项</string>
+
 </resources>
